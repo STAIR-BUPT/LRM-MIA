@@ -1,5 +1,5 @@
 # Exploring MIA on LRMs
-
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/338a9fd4-37ae-4ae8-b9e0-fbf597718c29" />
 
 ## Installation
 
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 Use the scripts in `BlackSpectrum/Trace sampler/` to extract reasoning traces from various LLMs
 
 **Pre-extracted Examples**: We provide Claude Sonnet 4 reasoning trace examples in `BlackSpectrum/reasoning_trace_example_results/` for a quick start.
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/338a9fd4-37ae-4ae8-b9e0-fbf597718c29" />
+
 
 ## 💡 BlackSpectrum Quick Start
 <img width="639" height="284" alt="image" src="https://github.com/user-attachments/assets/01407e8e-5a99-473c-a59d-218308cb6f33" />
