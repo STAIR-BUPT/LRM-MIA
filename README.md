@@ -6,6 +6,7 @@
 ```bash
 pip install -r requirements.txt
 ```
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/338a9fd4-37ae-4ae8-b9e0-fbf597718c29" />
 
 ## Extract Reasoning Traces
 
@@ -15,6 +16,7 @@ Use the scripts in `BlackSpectrum/Trace sampler/` to extract reasoning traces fr
 
 
 ## BlackSpectrum Quick Start
+<img width="639" height="284" alt="image" src="https://github.com/user-attachments/assets/01407e8e-5a99-473c-a59d-218308cb6f33" />
 
 ### Step 1: Build Projection Scores
 
