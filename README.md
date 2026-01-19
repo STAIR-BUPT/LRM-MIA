@@ -6,16 +6,15 @@
 ```bash
 pip install -r requirements.txt
 ```
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/338a9fd4-37ae-4ae8-b9e0-fbf597718c29" />
 
 ## Extract Reasoning Traces
 
 Use the scripts in `BlackSpectrum/Trace sampler/` to extract reasoning traces from various LLMs
 
 **Pre-extracted Examples**: We provide Claude Sonnet 4 reasoning trace examples in `BlackSpectrum/reasoning_trace_example_results/` for a quick start.
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/338a9fd4-37ae-4ae8-b9e0-fbf597718c29" />
 
-
-## BlackSpectrum Quick Start
+## 💡 BlackSpectrum Quick Start
 <img width="639" height="284" alt="image" src="https://github.com/user-attachments/assets/01407e8e-5a99-473c-a59d-218308cb6f33" />
 
 ### Step 1: Build Projection Scores
@@ -40,7 +39,7 @@ python evaluation_predictor.py \
     --output <evaluation_results.xlsx>
 ```
 
-## Complete Example
+### Complete Example
 
 Run the quick example script:
 
@@ -54,9 +53,9 @@ This script will:
 3. Evaluate and output results to `BlackSpectrum/outputs/`
 
 
-## Command Options
+### Command Options
 
-### build_axis_projection_score.py
+#### build_axis_projection_score.py
 
 | Option | Required | Description |
 |--------|----------|-------------|
@@ -68,7 +67,7 @@ This script will:
 | `--device` | No | Device: `cuda`, `cuda:0`, `0`, `1`, or `cpu` (auto-detect if not specified) |
 | `--z_thresh` | No | Outlier removal threshold (default: 2.0) |
 
-### evaluation_predictor.py
+#### evaluation_predictor.py
 
 Outputs two evaluation levels:
 - **Sequence-level**: Evaluate each reasoning path independently
@@ -81,13 +80,13 @@ Outputs two evaluation levels:
 | `--output` | No | Results output (saves combined and detailed sheets) |
 
 
-## Output Files
+#### Output Files
 
 When `--output` is specified, `evaluation_predictor.py` generates:
 - `<output>.xlsx`: Combined results (sequence + document level)
 - `<output>_detailed.xlsx`: Separate sheets for each level
 
-## Available Models
+#### Available Models
 
 **encoder: pre-training model**:
 - `sentence-transformers/all-distilroberta-v1`
@@ -96,7 +95,7 @@ When `--output` is specified, `evaluation_predictor.py` generates:
 
 
 
-## Naive Baseline Quick Start
+## 📚 Naive Baseline Quick Start
 
 ### Step 1: Analyze Thinking Tokens & Compression Rate
 
@@ -117,7 +116,7 @@ python naive_attack_baseline/evaluation_naive_baselines.py \
     -o <evaluation_results.xlsx>
 ```
 
-## Complete Example
+### Complete Example
 
 Run the example script to execute:
 
@@ -130,9 +129,9 @@ This script will:
 2. Analyze non-member data (thinking tokens & compression rate)
 3. Evaluate and output results to `naive_attack_baseline/outputs/`
 
-## Command Options
+### Command Options
 
-### naive_thinkingtoken_and_compressionrate.py
+#### naive_thinkingtoken_and_compressionrate.py
 
 | Option | Required | Description |
 |--------|----------|-------------|
@@ -143,7 +142,7 @@ This script will:
 | `--embedding-model` | No | Embedding model path (default: sentence-transformers/all-MiniLM-L6-v2) |
 | `--threshold` | No | Similarity threshold (default: 0.8) |
 
-### evaluation_naive_baselines.py
+#### evaluation_naive_baselines.py
 
 Outputs two evaluation levels:
 - **Sequence-level**: Evaluate each reasoning path independently
@@ -155,7 +154,7 @@ Outputs two evaluation levels:
 | `-n, --nonmember_data` | Yes | Non-member analysis file |
 | `-o, --output` | No | Results output (saves combined and detailed sheets) |
 
-## Output Files
+#### Output Files
 
 When `-o` is specified, `evaluation_naive_baselines.py` generates:
 - `<output>.xlsx`: Combined results (sequence + document level)
