@@ -160,6 +160,20 @@ When `-o` is specified, `evaluation_naive_baselines.py` generates:
 - `<output>.xlsx`: Combined results (sequence + document level)
 - `<output>_detailed.xlsx`: Separate sheets for each level
 
+
+## Cite
+```bibtex
+@misc{hu2026reasoningleaksmembershipmembership,
+      title={When Reasoning Leaks Membership: Membership Inference Attack on Black-box Large Reasoning Models}, 
+      author={Ruihan Hu and Yu-Ming Shang and Wei Luo and Ye Tao and Xi Zhang},
+      year={2026},
+      eprint={2601.13607},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2601.13607}, 
+}
+```
+
 ## 关于我们
 
 STAIR (Secure and Trustworthy AI Research) 团队隶属于北京邮电大学网络空间安全学院和可信分布式计算与服务教育部重点实验室。团队主要研究安全可信人工智能技术，及在网络空间治理领域的应用，近年来在网络内容与行为分析、大模型安全等方面承担了国家重点研发计划等多项重要科研任务。
