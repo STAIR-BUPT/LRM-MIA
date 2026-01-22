@@ -52,7 +52,6 @@ This script will:
 2. Process non-member data with projection scoring
 3. Evaluate and output results to `BlackSpectrum/outputs/`
 
-
 ### Command Options
 
 #### build_axis_projection_score.py
